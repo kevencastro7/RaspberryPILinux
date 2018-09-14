@@ -18,5 +18,12 @@ PROCEDIMENTO PARA A INSTALAÇÃO DO FILESYSTEM COM DEBOOTSTRAP
     sudo chroot /mnt /usr/bin/qemu-arm-static /bin/sh -i
   c. Terminar a instalção do debootstrap:
     /debootstrap/debootstrap --second-stage
+  d. Troque a senha
+    passwd
 
 4. Configurar Inicialização do Console:
+  a. Procure o arquivo /etc/inittab
+  b. Edite-o como administrador
+  c. Adicione a seguinte linha:
+    T0:23:respawn:/sbin/getty -L console 115200 vt102
+    
