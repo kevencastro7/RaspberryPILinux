@@ -1,6 +1,8 @@
 PROCEDIMENTO PARA A UTILIZAÇO DO BUILDROOT
  
 1. Instalação das dependências
+
+
 	a. Instalar os seguintes pacotes:
 		sudo apt-get install sed make binutils build-essential gcc g++ bash patch gzip bzip2 perl tar cpio python unzip rsync file file bc wget libncurses5-dev libncursesw5-dev g++-multilib gcc-multilib 
 
