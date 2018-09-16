@@ -43,3 +43,4 @@ PROCEDIMENTO PARA A UTILIZAÇO DO BUILDROOT
 	a. Procurar a imagem gerada:
 		output/images/sdcard.img
 	b. Gravar no SD utilizando o gnome-disk-utils
+ 
