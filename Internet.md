@@ -20,4 +20,14 @@ PROCEDIMENTO PARA A UTILIZAÇÃO DE INTERNET NO DEBIAN
     netmask 255.255.255.0
     gateway 192.168.1.254
     
+2. Habilitar a comunicação SSH
+
+  a. Instalar o seguinte pacote:
     
+    apt-get install openssh-client openssh-server
+    
+  b. Editar o arquivo utilizando o seguinte comando:
+    
+    nano /etc/ssh/sshd_config
+    
+  c.
