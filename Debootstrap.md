@@ -23,7 +23,7 @@ PROCEDIMENTO PARA A INSTALAÇÃO DO FILESYSTEM COM DEBOOTSTRAP
   
     sudo cp /usr/bin/qemu-arm-static /mnt/usr/bin/
     
-  b. Inicar a emulação:
+  b. Iniciar a emulação:
   
     sudo chroot /mnt /usr/bin/qemu-arm-static /bin/sh -i
     
