@@ -30,4 +30,30 @@ PROCEDIMENTO PARA A UTILIZAÇÃO DE INTERNET NO DEBIAN
     
     nano /etc/ssh/sshd_config
     
-  c.
+  c. Procurar essa linha:
+    
+    PermitRootLogin
+    
+  d. E alterar o que estiver nela para:
+  
+    PermitRootLogin yes
+    
+3. Comunicação SSH
+
+  a. Na placa, utilizar o comando:
+    
+    ifconfig
+  
+  b. Ele retornará o IP:
+  
+    eth0      Link encap:Ethernet  HWaddr b8:27:eb:93:a9:a3  
+          inet addr:192.168.0.16  Bcast:192.168.0.255  Mask:255.255.255.0
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:9416 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:1375 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:9652095 (9.2 MiB)  TX bytes:121830 (118.9 KiB)
+
+  c. No computador, utilziar o seguinte comando:
+  
+    ssh root@192.168.0.16
