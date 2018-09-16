@@ -1,6 +1,7 @@
 PROCEDIMENTO PARA A UTILIZAÇÃO DE INTERNET NO DEBIAN
 
 1. Alterar a rede
+
   a. Editar o arquivo utilizando o seguinte comando:
     
     nano /etc/network/interfaces
