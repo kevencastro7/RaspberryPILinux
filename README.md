@@ -44,7 +44,7 @@ PROCEDIMENTO PARA A UTILIZAÇO DO BUILDROOT
   
 	d. Configurar o Kernel
   
-	e. Escolher os pacotes necessários em Target packages
+	e. Escolher os pacotes desejados em Target packages
 
 5. Configuração do linux
 
