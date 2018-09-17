@@ -63,6 +63,10 @@ PROCEDIMENTO PARA A UTILIZAÇÃO DE INTERNET NO DEBIAN
           		collisions:0 txqueuelen:1000 
           		RX bytes:9652095 (9.2 MiB)  TX bytes:121830 (118.9 KiB)
 
-  	c. No computador, utilziar o seguinte comando:
+  	c. No computador, utilizar o seguinte comando:
   
     		ssh root@192.168.0.16
+
+    d. Caso não funcione, tente reiniciar o serviço:
+        
+        service networking restart
