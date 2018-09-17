@@ -8,7 +8,7 @@ PROCEDIMENTO PARA A UTILIZAÇÃO DE INTERNET NO DEBIAN
     
   	b. Coloque o seguinte conteúdo:
   
-    		# interfaces(5) file used by ifup(8) and ifdown(8)
+        # interfaces(5) file used by ifup(8) and ifdown(8)
     		auto lo
     		iface lo inet loopback
 
