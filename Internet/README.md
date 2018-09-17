@@ -69,4 +69,4 @@ PROCEDIMENTO PARA A UTILIZAÇÃO DE INTERNET NO DEBIAN
 
     d. Caso não funcione, tente reiniciar o serviço:
         
-        service networking restart
+        	service networking restart
