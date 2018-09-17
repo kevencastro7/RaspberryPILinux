@@ -2,46 +2,46 @@ PROCEDIMENTO PARA A INSTALAÇÃO DO FILESYSTEM COM DEBOOTSTRAP
 
 1. Instalação das dependências
 
-  a. Instalar os seguintes pacotes:
+  	a. Instalar os seguintes pacotes:
   
-    sudo apt-get install debootstrap qemu binfmt-support qemu-user-static
+    		sudo apt-get install debootstrap qemu binfmt-support qemu-user-static
     
 2. Utilização do debootstrap:
 
-  a. Formatar a partição 2 para ext4
+  	a. Formatar a partição 2 para ext4
   
-  b. Montar o SD Card
+  	b. Montar o SD Card
+   
+		sudo mount /dev/mmcblk0p2 /mnt
+  	c. Instalar o debootstrap:
   
-    sudo mount /dev/mmcblk0p2 /mnt
-  c. Instalar o debootstrap:
-  
-    sudo debootstrap --arch armel --foreign wheezy /mnt http://ftp.us.debian.org/debian/
+    		sudo debootstrap --arch armel --foreign wheezy /mnt http://ftp.us.debian.org/debian/
 
 3. Emulação do ARM:
 
-  a. Copiar o pacote para o filesystem:
+  	a. Copiar o pacote para o filesystem:
   
-    sudo cp /usr/bin/qemu-arm-static /mnt/usr/bin/
+    		sudo cp /usr/bin/qemu-arm-static /mnt/usr/bin/
     
-  b. Iniciar a emulação:
+  	b. Iniciar a emulação:
   
-    sudo chroot /mnt /usr/bin/qemu-arm-static /bin/sh -i
+    		sudo chroot /mnt /usr/bin/qemu-arm-static /bin/sh -i
     
-  c. Terminar a instalção do debootstrap:
+  	c. Terminar a instalção do debootstrap:
   
-    /debootstrap/debootstrap --second-stage
+    		/debootstrap/debootstrap --second-stage
     
-  d. Troque a senha
+  	d. Troque a senha
   
-    passwd
+    		passwd
 
 4. Configurar Inicialização do Console:
 
-  a. Procure o arquivo /etc/inittab
+  	a. Procure o arquivo /etc/inittab
   
-  b. Edite-o como administrador
+  	b. Edite-o como administrador
   
-  c. Adicione a seguinte linha no RaspberryPI:
+  	c. Adicione a seguinte linha no RaspberryPI:
   
-    T0:23:respawn:/sbin/getty -L console 115200 vt102
+    		T0:23:respawn:/sbin/getty -L console 115200 vt102
 
