@@ -19,6 +19,15 @@ PROCEDIMENTO PARA A UTILIZAÇÃO DE INTERNET NO DEBIAN
     address 192.168.1.100
     netmask 255.255.255.0
     gateway 192.168.1.254
+   
+  c. Editar o arquivo utilziando o seguinte comando:
+     
+     nano /etc/resolv.conf
+     
+  d. Coloque o seguinte conteúdo:
+      
+      nameserver 8.8.8.8
+      nameserver 8.8.4.4
     
 2. Habilitar a comunicação SSH
 
