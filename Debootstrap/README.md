@@ -41,11 +41,7 @@ PROCEDIMENTO PARA A INSTALAÇÃO DO FILESYSTEM COM DEBOOTSTRAP
   
   b. Edite-o como administrador
   
-  c1. Adicione a seguinte linha no RaspberryPI:
+  c. Adicione a seguinte linha no RaspberryPI:
   
     T0:23:respawn:/sbin/getty -L console 115200 vt102
-    
-  c2. Adicione a seguinte linha no BeagleBoneBlack:
-  
-    ttyO0::respawn:/sbin/getty -L ttyO0 115200 vt102    
-    
+
