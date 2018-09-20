@@ -5,7 +5,6 @@ PROCEDIMENTO PARA A INSTALAÇÃO DO FILESYSTEM COM DEBOOTSTRAP
   	a. Instalar os seguintes pacotes:
   
     		sudo apt-get install debootstrap qemu binfmt-support qemu-user-static
-    
 2. Utilização do debootstrap:
 
   	a. Formatar a partição 2 para ext4
@@ -16,7 +15,6 @@ PROCEDIMENTO PARA A INSTALAÇÃO DO FILESYSTEM COM DEBOOTSTRAP
   	c. Instalar o debootstrap:
   
     		sudo debootstrap --arch armel --foreign wheezy /mnt http://ftp.us.debian.org/debian/
-
 3. Emulação do ARM:
 
   	a. Copiar o pacote para o filesystem:
