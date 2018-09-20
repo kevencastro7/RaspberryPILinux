@@ -10,8 +10,8 @@ PROCEDIMENTO PARA A INSTALAÇÃO DO FILESYSTEM COM DEBOOTSTRAP
   	a. Formatar a partição 2 para ext4
   
   	b. Montar o SD Card
-   
-		sudo mount /dev/mmcblk0p2 /mnt
+	
+   			sudo mount /dev/mmcblk0p2 /mnt
   	c. Instalar o debootstrap:
   
     		sudo debootstrap --arch armel --foreign wheezy /mnt http://ftp.us.debian.org/debian/
