@@ -33,13 +33,8 @@ PROCEDIMENTO PARA A INSTALAÇÃO DO FILESYSTEM COM DEBOOTSTRAP
   
     		passwd
 
-4. Configurar Inicialização do Console:
+4. Modo de Escredita e leitura
 
-  	a. Procure o arquivo /etc/inittab
-  
-  	b. Edite-o como administrador
-  
-  	c. Adicione a seguinte linha no RaspberryPI:
-  
-    		T0:23:respawn:/sbin/getty -L console 115200 vt102
+mount -o remount,rw /dev/hda2 /
+
 
