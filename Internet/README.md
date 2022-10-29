@@ -14,7 +14,7 @@ PROCEDIMENTO PARA A UTILIZAÇÃO DE INTERNET NO DEBIAN
 
     		allow-hotplug eth0
     		auto eth0
-    		iface eth0 inet dhcp
+    		iface eth0 inet static
 
     		address 192.168.1.100
     		netmask 255.255.255.0
